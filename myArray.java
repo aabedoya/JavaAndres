@@ -23,8 +23,8 @@ El resultado del programa debe ser los n números por los que pasó para obtener
 */
 
 public class myArray{
-    static int[] myArray = { 3, 2, 9, 6, 5, 3, 5, 7, 5 };//Valores que nos entregan en el Array
-    static int n = 3;//Valor de n, tener en cuenta que si n cambia, el numero de valores del myArray debe aumentar o disminuir
+    static int[] myArray = { 3, 2, 9, 6, 5, 3, 5, 7, 5, 1, 2, 3, 4, 5, 6, 7};//Valores que nos entregan en el Array
+    static int n = 4;//Valor de n, tener en cuenta que si n cambia, el numero de valores del myArray debe aumentar o disminuir
     
     public static void main(String[] args) {
         //boolean encontrado = true;
@@ -38,7 +38,7 @@ public class myArray{
         //Variable para guardar el numero mas paqueño, se inicia en 9 que es el más alto que puede tener el Array
         int matriz[][] = new int[filas][columnas];
         //Array de 2 dimensiones que contendrá los valores de MyArray unidimensional
-        int[] camino = {0,0,0};
+        int[] camino = new int[n];
         //Array que guardara los números que menos suman al pasar la matriz de izquierda a derecha 
         for(int i=0;i<filas;i++){
             for(int j=0; j<columnas;j++){
@@ -69,7 +69,7 @@ public class myArray{
                 
                 }
             }
-            menor = myArray.length;
+            menor = 9;
             System.out.println();
         }
         
